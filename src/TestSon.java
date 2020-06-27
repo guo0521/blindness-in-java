@@ -1,6 +1,4 @@
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class TestSon extends Test{
 
@@ -12,6 +10,4 @@ public class TestSon extends Test{
     public List<String> getTestList() {
         return null;
     }
-
-    Set<Test> t = new HashSet<>();
 }
