@@ -49,7 +49,7 @@ public class Listtest {
         source.add(Integer.valueOf(2));
         source.add(Double.valueOf(1.1));
 
-        List<Test> size = new LinkedList<>();
+        List<Number> size = new LinkedList<>();
         size.add(null);size.add(null);size.add(null);size.add(null);
 
         List<Object> dest = new LinkedList<>(size);
