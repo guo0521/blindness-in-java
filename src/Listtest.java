@@ -1,6 +1,8 @@
 import com.sun.javafx.UnmodifiableArrayList;
 
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Listtest {
 
@@ -74,7 +76,26 @@ public class Listtest {
         System.out.println(numbers);//[c,b]
 //         */
 
+//        /*
+//        test greedy, reluctant and possessive
+        Pattern pattern = Pattern.compile(".*+foo");
+        String string = "xfooxxxxxxfoo";
+        Matcher matcher = pattern.matcher(string);
+        if(matcher.find()){
+            System.out.println(matcher.group());
+        }
+//         */
+
+        System.out.println(decision());
+
     }
 
-
+//    help to test try and finally
+    private static boolean decision(){
+        try{
+            return true;
+        }finally {
+            return false;
+        }
+    }
 }
